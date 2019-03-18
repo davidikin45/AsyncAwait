@@ -8,7 +8,8 @@
 * Dangerous to wrap sync calls in Task.Run. Better to copy, paste and update to be async.
 * Use thread safe collections such as ConcurrentBag.
 * Interlocked.Add(ref variableName, 1) allows thread safe integer updating or lock(object) for non integers. Optimize code so the least amount of locks are used.
-* [Getting Started with Asynchronous Programming in .NET]()
+* [Getting Started with Asynchronous Programming in .NET](https://app.pluralsight.com/library/courses/getting-started-with-asynchronous-programming-dotnet/table-of-contents)
+* [Async Antipatterns](https://markheath.net/post/async-antipatterns)
 
 ## Async/Await
 
