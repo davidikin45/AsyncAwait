@@ -303,3 +303,11 @@ public async IAsyncEnumerable<StockPrice> LoadStocks()
 	}
 }
 ```
+
+## Data Processing
+```
+Parallel.ForEach(items, new ParellelOptions {MaxDegressOfParallelism = 2,}, (item, state) => {
+	state.Break() //complete all iterations on all threads that are prior to the current iteration on the current thread 
+	state.Stop() //stop all iterations as soon as convenient 
+});
+```
